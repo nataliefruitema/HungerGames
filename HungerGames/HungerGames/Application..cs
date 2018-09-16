@@ -6,5 +6,6 @@ namespace HungerGames
 {
     class Application
     {
+   
     }
 }
