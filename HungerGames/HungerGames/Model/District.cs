@@ -5,28 +5,12 @@ using HungerGames.model;
 
 namespace HungerGames.Model
 {
-    class District
+    class District : Contestant
     {
-      
-      Random random = new Random();
-
-      
-        public int MIN_ATTACK_BONUS = 1;
-        public int MAX_ATTACK_BONUS = 10;
-        public int MIN_DEFENSE_BONUS = 1;
-        public int MAX_DEFENSE_BONUS = 15;
-        private int district;
-
-        public District(int district)
+        public District(int id, Gender gender) : base(id, gender)
         {
-            this.district = district;
+            
         }
-
-        // private Contestant DistrictContestant(int i)
-        //     {
-        //                 return new District(random.Next(MIN_DEFENSE_BONUS))
-        //     }
-
     }
 }
 

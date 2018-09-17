@@ -6,13 +6,30 @@ namespace HungerGames.Model
 {
     class BattleItem
     {
-        public int AttackBonus { get; set; }
+        // create battleItems
 
-        public int DefenseBonus { get; set; }
-    
-        public int MIN_ATTACK_BONUS = 1;
-        public int MAX_ATTACK_BONUS = 10;
-        public int MIN_DEFENSE_BONUS = 1;
-        public int MAX_DEFENSE_BONUS = 15;
+        private int attackBonus;
+
+        public int GetAttackBonus()
+        {
+            return attackBonus;
+        }
+
+        public void SetAttackBonus(int value)
+        {
+            attackBonus = value;
+        }
+
+        private int defenseBonus;
+
+        public int GetDefenseBonus()
+        {
+            return defenseBonus;
+        }
+
+        public void SetDefenseBonus(int value)
+        {
+            defenseBonus = value;
+        }
     }
 }
